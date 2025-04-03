@@ -1,0 +1,91 @@
+1.Reflection Questions
+
+
+
+How could MLflow improve collaboration in a machine learning team?
+
+What components of MLflow seem most useful for managing machine learning experiments?
+
+How might MLflow help address reproducibility issues in machine learning? 
+
+What kinds of challenges could arise when scaling up MLflow to large datasets or models?
+
+How might prompt engineers specifically benefit from using MLflow?
+
+
+
+2.Challenge Exercises
+
+Try using MLflow Tracking to log metrics and parameters from a machine learning experiment.
+
+Package up a simple machine learning model as an MLflow Project. 
+
+Use the MLflow UI to compare multiple runs of an experiment
+
+Try deploying a machine learning model using the MLflow Model Registry and MLflow Deployments for LLMs. Observe how model governance and access control can be implemented.
+
+Explore using MLflow with a specific machine learning library like PyTorch or TensorFlow. See how logging model artifacts as MLflow models allows framework-agnostic deployment.  
+
+3.Reflection Questions
+
+How could you use the tracking UI to compare model experiments?
+
+Why is it useful for MLflow projects to specify software environments?
+
+What model deployment platforms does MLflow support?
+
+4.Challenge Exercises
+
+Use MLflow tracking with local model training experiments
+
+Containerize an MLflow Project to ensure software consistency
+
+Deploy a registered MLflow model and request real-time inferences
+
+MLflow projects:
+
+
+1. Summary
+
+MLflow Projects are a format for packaging data science code to run it in a reproducible and reusable way. They consist of code, its dependencies, and metadata.
+
+Projects can specify details like name, environments, parameters, and entry points in a MLproject file. Otherwise, conventions are used to infer these. 
+
+Projects can be run locally or remotely using mlflow run. Additional parameters, arguments, and flags can configure the runs.
+
+MLflow Projects make iterating quickly easier. They also enable constructing multi-step workflows by calling mlflow.projects.run() in a program.
+
+Use cases include modularizing code, hyperparameter tuning, cross-validation, and packaging existing code.
+
+
+2.Reflection Questions
+
+How do MLflow Projects differ from simply version controlling and sharing code? What additional value do they provide?
+
+What kinds of challenges could arise when trying to break up a machine learning pipeline into separate reusable steps? How might MLflow help address some of these?
+
+What are some examples of workflows or use cases that would benefit from being implemented as MLflow Projects?
+
+How feasible would it be to convert an existing machine learning codebase into an MLflow Project? What would be involved?
+
+
+3.Challenge Exercises
+
+Take an existing machine learning script and configure it as an MLflow Project with conda.yaml, MLproject file etc.
+
+Build a two-step workflow using MLflow Projects to split data, then train and evaluate a model.
+
+Use MLflow Projects to launch multiple distributed hyperparameter tuning jobs, tracking the results.
+
+
+Challenge Exercises
+
+Configure an MLproject to run a scikit-learn workflow
+
+Execute an MLflow project linking to a remote Github repository
+
+Modify conda dependencies to add and upgrade versions of key libraries
+
+
+
+
